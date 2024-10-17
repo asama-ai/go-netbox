@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **Ssid** | Pointer to **string** |  | [optional] 
 **Status** | Pointer to [**CableStatusValue**](CableStatusValue.md) |  | [optional] 
 **Tenant** | Pointer to [**NullableBriefTenantRequest**](BriefTenantRequest.md) |  | [optional] 
-**AuthType** | Pointer to [**AuthenticationType1**](AuthenticationType1.md) |  | [optional] 
-**AuthCipher** | Pointer to [**AuthenticationCipher**](AuthenticationCipher.md) |  | [optional] 
+**AuthType** | Pointer to [**AuthenticationType3**](AuthenticationType3.md) |  | [optional] 
+**AuthCipher** | Pointer to [**AuthenticationCipher1**](AuthenticationCipher1.md) |  | [optional] 
 **AuthPsk** | Pointer to **string** |  | [optional] 
 **Distance** | Pointer to **NullableFloat64** |  | [optional] 
 **DistanceUnit** | Pointer to [**PatchedWritableWirelessLinkRequestDistanceUnit**](PatchedWritableWirelessLinkRequestDistanceUnit.md) |  | [optional] 
@@ -175,20 +175,20 @@ HasTenant returns a boolean if a field has been set.
 UnsetTenant ensures that no value is present for Tenant, not even an explicit nil
 ### GetAuthType
 
-`func (o *PatchedWritableWirelessLinkRequest) GetAuthType() AuthenticationType1`
+`func (o *PatchedWritableWirelessLinkRequest) GetAuthType() AuthenticationType3`
 
 GetAuthType returns the AuthType field if non-nil, zero value otherwise.
 
 ### GetAuthTypeOk
 
-`func (o *PatchedWritableWirelessLinkRequest) GetAuthTypeOk() (*AuthenticationType1, bool)`
+`func (o *PatchedWritableWirelessLinkRequest) GetAuthTypeOk() (*AuthenticationType3, bool)`
 
 GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAuthType
 
-`func (o *PatchedWritableWirelessLinkRequest) SetAuthType(v AuthenticationType1)`
+`func (o *PatchedWritableWirelessLinkRequest) SetAuthType(v AuthenticationType3)`
 
 SetAuthType sets AuthType field to given value.
 
@@ -200,20 +200,20 @@ HasAuthType returns a boolean if a field has been set.
 
 ### GetAuthCipher
 
-`func (o *PatchedWritableWirelessLinkRequest) GetAuthCipher() AuthenticationCipher`
+`func (o *PatchedWritableWirelessLinkRequest) GetAuthCipher() AuthenticationCipher1`
 
 GetAuthCipher returns the AuthCipher field if non-nil, zero value otherwise.
 
 ### GetAuthCipherOk
 
-`func (o *PatchedWritableWirelessLinkRequest) GetAuthCipherOk() (*AuthenticationCipher, bool)`
+`func (o *PatchedWritableWirelessLinkRequest) GetAuthCipherOk() (*AuthenticationCipher1, bool)`
 
 GetAuthCipherOk returns a tuple with the AuthCipher field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAuthCipher
 
-`func (o *PatchedWritableWirelessLinkRequest) SetAuthCipher(v AuthenticationCipher)`
+`func (o *PatchedWritableWirelessLinkRequest) SetAuthCipher(v AuthenticationCipher1)`
 
 SetAuthCipher sets AuthCipher field to given value.
 

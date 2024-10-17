@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Name** | Pointer to **string** |  | [optional] 
 **Protocol** | [**BriefFHRPGroupProtocol**](BriefFHRPGroupProtocol.md) |  | 
 **GroupId** | **int32** |  | 
-**AuthType** | Pointer to [**AuthenticationType**](AuthenticationType.md) |  | [optional] 
+**AuthType** | Pointer to [**AuthenticationType2**](AuthenticationType2.md) |  | [optional] 
 **AuthKey** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
@@ -100,20 +100,20 @@ SetGroupId sets GroupId field to given value.
 
 ### GetAuthType
 
-`func (o *FHRPGroupRequest) GetAuthType() AuthenticationType`
+`func (o *FHRPGroupRequest) GetAuthType() AuthenticationType2`
 
 GetAuthType returns the AuthType field if non-nil, zero value otherwise.
 
 ### GetAuthTypeOk
 
-`func (o *FHRPGroupRequest) GetAuthTypeOk() (*AuthenticationType, bool)`
+`func (o *FHRPGroupRequest) GetAuthTypeOk() (*AuthenticationType2, bool)`
 
 GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAuthType
 
-`func (o *FHRPGroupRequest) SetAuthType(v AuthenticationType)`
+`func (o *FHRPGroupRequest) SetAuthType(v AuthenticationType2)`
 
 SetAuthType sets AuthType field to given value.
 

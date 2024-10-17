@@ -179,6 +179,8 @@
 
 * `DC_TERMINAL` (value: `"DC Terminal"`)
 
+* `EATON_C39` (value: `"Eaton C39"`)
+
 * `HDOT_CX` (value: `"HDOT Cx"`)
 
 * `SAF_D_GRID` (value: `"Saf-D-Grid"`)

@@ -29,6 +29,8 @@
 
 * `_10GBASE_CX4` (value: `"10gbase-cx4"`)
 
+* `_100BASE_X_SFP` (value: `"100base-x-sfp"`)
+
 * `_1000BASE_X_GBIC` (value: `"1000base-x-gbic"`)
 
 * `_1000BASE_X_SFP` (value: `"1000base-x-sfp"`)
@@ -130,6 +132,8 @@
 * `IEEE802_11BE` (value: `"ieee802.11be"`)
 
 * `IEEE802_15_1` (value: `"ieee802.15.1"`)
+
+* `IEEE802_15_4` (value: `"ieee802.15.4"`)
 
 * `OTHER_WIRELESS` (value: `"other-wireless"`)
 

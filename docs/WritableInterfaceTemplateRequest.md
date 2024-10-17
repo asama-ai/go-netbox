@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **Bridge** | Pointer to **NullableInt32** |  | [optional] 
 **PoeMode** | Pointer to [**InterfacePoeModeValue**](InterfacePoeModeValue.md) |  | [optional] 
 **PoeType** | Pointer to [**InterfacePoeTypeValue**](InterfacePoeTypeValue.md) |  | [optional] 
-**RfRole** | Pointer to [**WirelessRole**](WirelessRole.md) |  | [optional] 
+**RfRole** | Pointer to [**WirelessRole1**](WirelessRole1.md) |  | [optional] 
 
 ## Methods
 
@@ -333,20 +333,20 @@ HasPoeType returns a boolean if a field has been set.
 
 ### GetRfRole
 
-`func (o *WritableInterfaceTemplateRequest) GetRfRole() WirelessRole`
+`func (o *WritableInterfaceTemplateRequest) GetRfRole() WirelessRole1`
 
 GetRfRole returns the RfRole field if non-nil, zero value otherwise.
 
 ### GetRfRoleOk
 
-`func (o *WritableInterfaceTemplateRequest) GetRfRoleOk() (*WirelessRole, bool)`
+`func (o *WritableInterfaceTemplateRequest) GetRfRoleOk() (*WirelessRole1, bool)`
 
 GetRfRoleOk returns a tuple with the RfRole field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetRfRole
 
-`func (o *WritableInterfaceTemplateRequest) SetRfRole(v WirelessRole)`
+`func (o *WritableInterfaceTemplateRequest) SetRfRole(v WirelessRole1)`
 
 SetRfRole sets RfRole field to given value.
 

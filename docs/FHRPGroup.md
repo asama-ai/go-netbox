@@ -7,11 +7,11 @@ Name | Type | Description | Notes
 **Id** | **int32** |  | [readonly] 
 **Name** | Pointer to **string** |  | [optional] 
 **Url** | **string** |  | [readonly] 
-**DisplayUrl** | **string** |  | [readonly] 
+**DisplayUrl** | Pointer to **string** |  | [optional] [readonly] 
 **Display** | **string** |  | [readonly] 
 **Protocol** | [**BriefFHRPGroupProtocol**](BriefFHRPGroupProtocol.md) |  | 
 **GroupId** | **int32** |  | 
-**AuthType** | Pointer to [**AuthenticationType**](AuthenticationType.md) |  | [optional] 
+**AuthType** | Pointer to [**AuthenticationType2**](AuthenticationType2.md) |  | [optional] 
 **AuthKey** | Pointer to **string** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
 **Comments** | Pointer to **string** |  | [optional] 
@@ -25,7 +25,7 @@ Name | Type | Description | Notes
 
 ### NewFHRPGroup
 
-`func NewFHRPGroup(id int32, url string, displayUrl string, display string, protocol BriefFHRPGroupProtocol, groupId int32, created NullableTime, lastUpdated NullableTime, ipAddresses []BriefIPAddress, ) *FHRPGroup`
+`func NewFHRPGroup(id int32, url string, display string, protocol BriefFHRPGroupProtocol, groupId int32, created NullableTime, lastUpdated NullableTime, ipAddresses []BriefIPAddress, ) *FHRPGroup`
 
 NewFHRPGroup instantiates a new FHRPGroup object
 This constructor will assign default values to properties that have it defined,
@@ -124,6 +124,11 @@ and a boolean to check if the value has been set.
 
 SetDisplayUrl sets DisplayUrl field to given value.
 
+### HasDisplayUrl
+
+`func (o *FHRPGroup) HasDisplayUrl() bool`
+
+HasDisplayUrl returns a boolean if a field has been set.
 
 ### GetDisplay
 
@@ -187,20 +192,20 @@ SetGroupId sets GroupId field to given value.
 
 ### GetAuthType
 
-`func (o *FHRPGroup) GetAuthType() AuthenticationType`
+`func (o *FHRPGroup) GetAuthType() AuthenticationType2`
 
 GetAuthType returns the AuthType field if non-nil, zero value otherwise.
 
 ### GetAuthTypeOk
 
-`func (o *FHRPGroup) GetAuthTypeOk() (*AuthenticationType, bool)`
+`func (o *FHRPGroup) GetAuthTypeOk() (*AuthenticationType2, bool)`
 
 GetAuthTypeOk returns a tuple with the AuthType field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetAuthType
 
-`func (o *FHRPGroup) SetAuthType(v AuthenticationType)`
+`func (o *FHRPGroup) SetAuthType(v AuthenticationType2)`
 
 SetAuthType sets AuthType field to given value.
 

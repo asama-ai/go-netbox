@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int32** |  | [readonly] 
 **Url** | **string** |  | [readonly] 
-**DisplayUrl** | **string** |  | [readonly] 
+**DisplayUrl** | Pointer to **string** |  | [optional] [readonly] 
 **Display** | **string** |  | [readonly] 
 **Name** | **string** |  | 
 **Description** | Pointer to **string** |  | [optional] 
@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 
 ### NewIPSecProfile
 
-`func NewIPSecProfile(id int32, url string, displayUrl string, display string, name string, mode IPSecProfileMode, ikePolicy BriefIKEPolicy, ipsecPolicy BriefIPSecPolicy, created NullableTime, lastUpdated NullableTime, ) *IPSecProfile`
+`func NewIPSecProfile(id int32, url string, display string, name string, mode IPSecProfileMode, ikePolicy BriefIKEPolicy, ipsecPolicy BriefIPSecPolicy, created NullableTime, lastUpdated NullableTime, ) *IPSecProfile`
 
 NewIPSecProfile instantiates a new IPSecProfile object
 This constructor will assign default values to properties that have it defined,
@@ -97,6 +97,11 @@ and a boolean to check if the value has been set.
 
 SetDisplayUrl sets DisplayUrl field to given value.
 
+### HasDisplayUrl
+
+`func (o *IPSecProfile) HasDisplayUrl() bool`
+
+HasDisplayUrl returns a boolean if a field has been set.
 
 ### GetDisplay
 
